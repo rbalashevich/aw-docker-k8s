@@ -1,6 +1,7 @@
 # aw-docker-k8s
+http://aw.mafil.xyz
 
-Hello Anton. Unfourtunately my 7 years old laptop hangs out when running minikube, so I deployed the app on GKE. I've used such commands for YAML export:
+Hello Anton. Unfourtunately my 7 years old laptop hangs out when running minikube, so I deployed the app on GCP / GKE. I've used such commands for YAML export:
 
 gcloud container clusters get-credentials my-nginx-webserver-cluster --zone us-central1-a --project aw-k8s \ 
 && kubectl get service my-nginx-webserver-service -o yaml
