@@ -5,7 +5,7 @@ Hello Anton. Unfourtunately my 7 years old laptop hangs out when running minikub
 gcloud container clusters get-credentials my-nginx-webserver-cluster --zone us-central1-a --project aw-k8s \ 
 && kubectl get service my-nginx-webserver-service -o yaml
 
-A tutorial I've manaed to learn:
+A tutorial I've managed to learn:
 https://priyankvex.wordpress.com/2017/11/19/deploying-a-nginx-application-using-kubernetes-for-self-healing-and-scaling/
 
 The Docker image built from https://github.com/yobasystems/alpine-nginx (I know maintainer's name is funny for Russian speaking people :) )
