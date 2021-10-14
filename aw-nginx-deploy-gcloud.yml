@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    cloud.google.com/neg: '{"ingress":true}'
+  creationTimestamp: "2021-10-14T20:29:38Z"
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: my-nginx-webserver
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:app: {}
+      f:spec:
+        f:externalTrafficPolicy: {}
+        f:ports:
+          .: {}
+          k:{"port":80,"protocol":"TCP"}:
+            .: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:app: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: GoogleCloudConsole
+    operation: Update
+    time: "2021-10-14T20:29:38Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:finalizers:
+          .: {}
+          v:"service.kubernetes.io/load-balancer-cleanup": {}
+      f:status:
+        f:loadBalancer:
+          f:ingress: {}
+    manager: kube-controller-manager
+    operation: Update
+    time: "2021-10-14T20:30:28Z"
+  name: my-nginx-webserver-service
+  namespace: default
+  resourceVersion: "2288"
+  uid: 6d3235e6-b58b-42b7-b818-f297316694fc
+spec:
+  clusterIP: 10.0.13.215
+  clusterIPs:
+  - 10.0.13.215
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31038
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: my-nginx-webserver
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 34.121.171.80
+

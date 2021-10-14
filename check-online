@@ -1,0 +1,4 @@
+#!/bin/bash
+
+status=$(curl -s --head -w %{http_code} http://34.121.171.80 -o /dev/null)
+echo $status
