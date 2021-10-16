@@ -11,5 +11,9 @@ https://priyankvex.wordpress.com/2017/11/19/deploying-a-nginx-application-using-
 
 The Docker image built from https://github.com/yobasystems/alpine-nginx (I know maintainer's name is funny for Russian speaking people :) )
 
-No luck with building from pure Alpine, sorry. Perhaps it would be a next challenge.
+No luck with building from pure Alpine, sorry. Perhaps it would be a next challenge. 
+Updated on October 16th: successfully build a pure Alpine image with nginx named rbalashevich/aw-nginx-alpine-pure .
+
+Have a nice commit! ;)
+
 
