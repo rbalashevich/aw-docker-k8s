@@ -1,4 +1,14 @@
 #!/bin/bash
 
-status=$(curl -s --head -w %{http_code} http://34.121.171.80 -o /dev/null)
-echo $status
+read -p "Enter IP address [e.g. 35.226.118.191]: " IP_ADDRESS
+
+STATUS=$(curl -s --head -w %{http_code} http://$IP_ADDRESS -o /dev/null)
+
+echo "Probing with curl..."
+
+if [[ $STATUS = '200' ]]
+then
+  echo "HTTP Code is $STATUS: web server is ALIVE"
+else
+  echo "HTTP Code is $STATUS: web server is DEAD"
+fi
