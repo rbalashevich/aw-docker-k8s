@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>This is Nginx web server running on pure Alpine inside a Docker container, with <b>no root privileges</b>. Current Date and Time is <span id='date-time'></span>.</p>
+<p>Greetings from Roman B.!</p>
+
+<script>
+    var dt = new Date().toLocaleString();
+    document.getElementById('date-time').innerHTML=dt;
+</script>
+
+</body>
+</html>
+
