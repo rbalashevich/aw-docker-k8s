@@ -10,6 +10,5 @@ RUN touch /var/run/nginx.pid && \
 COPY ./index.html /var/www/htdocs
 USER nginx
 VOLUME /var/www
-VOLUME /docker-entrypoint.d/
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
 EXPOSE 8080
