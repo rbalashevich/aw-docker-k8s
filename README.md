@@ -12,7 +12,7 @@ The Docker image built from nginx:1.20-alpine, with bash, no root rights for ngi
 
 ```$ docker build -t rbalashevich/aw-nginx . ```
 
-```$ docker run -p 8080:8080 rbalashevich/aw-nginx ```
+```$ docker run -p 80:8080 rbalashevich/aw-nginx ```
 
 A so called 'check-online' script has been updated: featuring IP address input now.
 Have a nice commit! ;)
