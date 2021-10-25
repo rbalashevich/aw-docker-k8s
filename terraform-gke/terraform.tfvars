@@ -1,2 +1,2 @@
 project_id = "aw-k8s"
-region     = "europe-west4-b"
+region     = "europe-west4"
